@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    outline: none;
+}
+button{
+    outline: none;
+}
+
+
+.wrapper{
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    /* background-color: rgba(0,0,0,0.9); */
+}
+
+.left-half{
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logoHome{
+    width: 2%;
+    padding-left: 5%;    
+    position: relative;
+    bottom: 4px;
+    padding-top: 9px;
+}
+
+#logoHomeimg{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+}
+
+.left-half ul{
+    width: 95%;
+    display: flex;
+}
+
+.left-half ul a{
+    text-decoration: none;
+    color: white;
+    padding: 5% 7% 0 7%;
+    font-size: 20px;
+    align-items: baseline;
+    display: flex;
+    align-items: flex-end;
+    height: 22px;
+}
+.font{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.left-half ul a:visited{
+    color: white;    
+}
+
+.left-half ul a:active{
+    color: white;    
+}
+
+.left-half ul a:hover{
+    color:rgb(222, 184, 135);    
+}
+
+.right-half{
+    width: 25%;
+    display: flex;
+    vertical-align: middle;
+}
+
+.search{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 100px;
+    align-items: flex-end;
+}
+
+.searchBoxOutline{
+    display: flex;
+    vertical-align: middle  ;
+    background-color: white;
+    overflow: hidden;
+    height: 25px;
+    width: 200px;
+    border: white;
+    border-radius: 25px;
+}
+
+.searchTxtInput{
+    width: 75%;
+    padding-left: 15px;
+    border: none;
+    font-size: 12.2px;
+    color: gray;
+}
+
+.searchButton{
+    box-shadow: 0px     0px 0px transparent;
+    cursor: pointer;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    width: 20%;
+    height: 100%;
+    background: transparent;
+}
+
+.searchButton img{
+    padding-top: 2px;
+    width: 22%;
+    height: 60%;
+    outline: none;
+}
+
+.login{ 
+    align-self: flex-end;
+    width: 32px;
+    height: 32px;
+    padding-left: 155px;
+}
+
+.loginButton{
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.loginButton img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottomLine{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(0,0,0,0.9); */
+}
+
+.bottomLine img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    width: 95%;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    /* background-color: rgba(0,0,0,0.9); */
+}
+
+/* .vidContainer{
+    width: 100%;
+} */
+
+#bgVideo {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mainLeft{
+    width: 50%;
+    height: 600px;
+
+}
+
+/* .mainLeft section{
+
+} */
+
+.mainLeft section header{
+    color: white;
+    padding: 5% 0 0 5%;
+    font-size: 25px;
+}
+
+.mainLeft section p{
+    color: white;
+    padding: 5% 0 0 5%;
+    font-size: 20px;
+}
+
+.mainRight{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 0 0 0;
+}
+
+.floatingBox{
+    width: 40%;
+    height: 45%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.116);
+    background-clip: content-box;
+    position: relative;
+    
+}
+
+.mainRight img{
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding: 0 20% 10% 0;
+    /* filter: grayscale(100%); */
+    filter: brightness(150%);
+}
+
+.btmTxt{
+    color: white;
+    display: flex;
+    align-self: flex-end;
+}
+.btmTxt img{
+    height: 20px;
+    width: 20px;
+}
+footer{
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    
+}
+.contact{
+    position: absolute;
+    align-self: flex-end;
+    right: 0;
+    padding-right: 25px;
+}
+.contact button{
+    box-shadow: 0px     0px 0px transparent;
+    cursor: pointer;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    background-color: transparent;
+    padding: 35px;
+    height: 20px;
+    width: 20px;
+}
+
+.contact button img{
+
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumely - Online Resume Maker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+     <!-- Fonts -->
+</head>
+<body>
+
+  <div class="container-fluid">
+  <nav class="mb-1 navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
+      <a class="navbar-brand textFormatting" href="index.html"><h2><b>Resumely</b></h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+        aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent-333">
+        <ul class="navbar-nav mr-auto" id="nav-items">
+          <li class="hvr nav-item lrSpacing" style="max-width: 69.7333px; max-height: 58px;">
+            <a class="nav-link active spacing fontColor textFormatting" href="index.html" ><h5>Home</h5>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="hvr nav-item lrSpacing" style="max-width: 88.7833px; max-height: 58px;">
+            <a class="nav-link spacing fontColor textFormatting" href="#" ><h5> Resume</h5></a>
+          </li>
+          <li class="hvr nav-item lrSpacing" style="max-width: 110.2830px; max-height: 58px;">
+            <a class="nav-link spacing fontColor textFormatting" href="#" ><h5>Templates</h5></a>
+          </li>
+          <li class="hvr nav-item lrSpacing" style="max-width: 90px; max-height: 58px;">
+              <a class="nav-link spacing fontColor textFormatting" href="support.html" ><h5>Support</h5></a>
+            </li>
+        </ul>
+        <div class="search">
+            <form action="#" method="POST" class="container">
+                <div id="srchBorder"><input type="text" id="srchInput" name="srchInput" placeholder="Search"></div>
+                <button type="submit" id="srchButton"><i class="fas fa-search fa-lg"></i></button>
+            </form>
+        </div>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user-alt fa-lg" style="color: black;"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333">
+              <a class="dropdown-item" href="signup.html">Sign Up</a>
+              <a class="dropdown-item" href="login.html">Login</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+  <div class="container hh" style="text-align: center">
+      <h1 class="display-3">Login</h1>
+  </div>
+
+  <div class="container con2">
+    <form class="needs-validation" novalidate>
+        <div class="form-row justify-content-around">
+          <!-- <div class="col-md-8 mb-3">
+            <label for="validationCustom01">Name</label>
+            <input type="text" class="form-control" placeholder="Name" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div> -->
+          <!-- <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" placeholder="Last name" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div> -->
+        </div>
+        <div class="form-row justify-content-around">
+          <div class="col-md-8 mb-3">
+            <label for="validationCustom03">Email</label>
+            <input type="text" class="form-control" placeholder="Email" id="validationCustom03" required>
+          </div>
+
+        </div>
+        <br>
+        <!-- <div class="form-row justify-content-around">
+          <div class="col-md-8 mb-3">
+            <label for="validationCustom03">Country</label>
+          <input type="text" class="form-control" required placeholder="Country">
+          </div>
+        </div> -->
+        <div class="form-row justify-content-around">
+          <div class="col-md-8 mb-3">
+            <label for="validationCustom03">Password</label>
+          <input type="password" class="form-control" required placeholder="Password">
+          <!-- <input type="password" id="pass" name="password"
+           minlength="8" required> -->
+          </div>
+        </div>
+
+        <!-- <div class="form-group con3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div> -->
+        <div class="row justify-content-center con3">
+          <div class="col-8">
+        <button class="btn btn-primary btn-block" type="submit">Login</button>
+        </div>
+        </div>
+      </form>
+
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+  </div>
+
+
+    <footer>
+        <div>
+            <a href="#">Resumely</a>
+        </div>
+        <a href="#">
+            <!-- Fb logo -->
+            F
+        </a>
+        <a href="#">
+            <!-- Ig logo -->
+            I
+        </a>
+        <a href="#">
+            <!-- Twitter logo -->
+            T
+        </a>
+        <a href="#">
+            <!-- Email logo -->
+            E
+        </a>
+        <a href="#">
+            <!-- Phone Logo -->
+            P
+        </a>
+    </footer>
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

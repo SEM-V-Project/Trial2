@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumely - Online Resume Maker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <!-- Fonts -->
+</head>
+<body>
+        <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
+    <a class="navbar-brand textFormatting" href="#"><h2><b>Resumely</b></h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto" id="nav-items">
+        <li class="hvr nav-item lrSpacing" style="max-width: 69.7333px; max-height: 58px;">
+          <a class="nav-link active spacing fontColor textFormatting" href="#" ><h5>Home</h5>
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="hvr nav-item lrSpacing" style="max-width: 88.7833px; max-height: 58px;">
+          <a class="nav-link spacing fontColor textFormatting" href="#" ><h5> Resume</h5></a>
+        </li>
+        <li class="hvr nav-item lrSpacing" style="max-width: 110.2830px; max-height: 58px;">
+          <a class="nav-link spacing fontColor textFormatting" href="#" ><h5>Templates</h5></a>
+        </li>
+        <li class="hvr nav-item lrSpacing" style="max-width: 90px; max-height: 58px;">
+            <a class="nav-link spacing fontColor textFormatting" href="#" ><h5>Reviews</h5></a>
+          </li>          
+      </ul>
+      <div class="search">
+          <form action="#" method="POST" class="container">
+              <div id="srchBorder"><input type="text" id="srchInput" name="srchInput" placeholder="Search"></div>
+              <button type="submit" id="srchButton"><i class="fas fa-search fa-lg"></i></button>
+          </form>
+      </div>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-alt fa-lg" style="color: black;"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenuLink-333"> 
+            <a class="dropdown-item" href="#">Sign Up</a>
+            <a class="dropdown-item" href="#">Login</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+
+
+  <main class="h-100">
+      <div class="container-fluid bg-secondary h-100">
+          <div class="row">
+              <div class="col-md-6 bg-light">
+                <!-- Default form contact -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h1 mb-4" style="padding-bottom: 50px ;">Contact us</p>
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+    <br>
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+    <br>
+    <!-- Subject -->
+    <label>Subject</label>
+    <br><br>    
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a bug</option>
+        <option value="3">Feature request</option>
+    </select>
+    <br>
+    <!-- Message -->
+    <div class="form-group">
+        <br>    
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+    </div>
+    <br>
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+    <br>
+    <!-- Send button -->
+    <button class="btn btn-info btn-block" type="submit">Send</button>
+    <br>    
+</form>
+<!-- Default form contact -->        
+              </div>
+              <div class="col-md-6 text-center" style="padding-top: 100px; color: white; background-color: black;">
+                <h1 class="display-4"><strong>Connect to us directly</strong></h1>
+                <h4 class="h1" style="padding-top: 100px;">Email</h4>
+                <h5>example@example.com</h5>
+                <h4 class="h1" style="padding-top: 100px;">Phone No</h4>
+                <h5>9123456781</h5>
+                <div class="ml-auto" style="padding-top: 50px;">
+                    <!--Twitter-->
+                    <a class="tw-ic mr-3 fa-2x" role="button"><i class="fab fa-lg fa-twitter">   </i></a>
+                    <!--Linkedin-->
+                    <a class="li-ic mr-3 fa-2x" role="button"><i class="fab fa-lg fa-linkedin-in">   </i></a>
+                    <!--Email-->
+                    <a class="email-ic mr-3 fa-2x" role="button"><i class="far fa-lg fa-envelope">  </i></a>
+                  </div>
+            </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom" id="footer">
+      <a class="navbar-brand textFormatting" style="padding-top: 10px; padding-left: 10px;" href="#"><h3><b>Resumely</b></h3></a>
+
+      <div class="mx-auto">
+        <span class="navbar-text"> Made with </span>
+        <i class="fa fa-heart" style="color: red;"></i>
+        <span class="navbar-text">in India</span>
+      </div>
+
+      <div class="ml-auto">
+        <!--Facebook-->
+        <a class="fb-ic mr-3" role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
+        <!--Twitter-->
+        <a class="tw-ic mr-3" role="button"><i class="fab fa-lg fa-twitter"></i></a>
+        <!--Linkedin-->
+        <a class="li-ic mr-3" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a>
+        <!--Stack Overflow-->
+        <a class="so-ic mr-3" role="button"><i class="fab fa-lg fa-stack-overflow"></i></a>
+        <!--Github-->
+        <a class="git-ic mr-3" role="button"><i class="fab fa-lg fa-github"></i></a>
+        <!--Email-->
+        <a class="email-ic mr-3" role="button"><i class="far fa-lg fa-envelope"></i></a>
+      </div>
+    </nav>
+</footer>
+
+  <!-- Footer -->
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Fontawesome for bitmaps -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
+    
+</body>
+</html>
